@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="applying">
+    <div class="container">
+        <div class="heading-block">
+            <div>
+                <h1>Apply For Voyager. <span style="color: #0f1923;">Apply</span></h1>
+            </div>
+            <div class="voyager-logo">
+                <img src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" alt="">
+            </div>
+        </div>
+
+     <div class="signup-form">
+        <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.hidden_tag() }}
+         {{ form.title.label }}
+
+         {% if form.title.errors %}
+            {{ form.title(class="form-control") }}
+                   
+                        {% for error in form.title.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                    
+                {% else %}
+                   {{ form.title(class="form-control") }}
+                {% endif %}
+
+                {{ form.content.label(class="form-contol") }}
+
+                {% if form.content.errors %}
+                    {{ form.content(class="form-control") }}
+                    
+                        {% for error in form.content.errors %}
+                            <span>{{ error }}</span>
+                        {% endfor %}
+                   
+                {% else %}
+                <br>
+                    {{ form.content(class="form-control") }}
+                {% endif %}
+
+                <br>
+
+            {{ form.submit(class="btn") }}
+
+    </form>
+</div>
+{% endblock content %}

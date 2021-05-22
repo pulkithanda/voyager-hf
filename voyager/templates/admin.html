@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="responsesend">
+    <div class="admin-panel">
+        <center>
+        <h1 class="admin-header">Form Responses </h1>
+        <br>
+        <hr>
+    </center>
+    <br>
+    
+    <section id="info">
+      <div class="row">
+        {% for post in posts %}
+           <div class="card">
+            <h2>{{post.title}}</h2>
+            <p>{{post.content}}</p>
+            <small>{{post.date_posted}}</small>
+        </div>
+        {% endfor %}
+        </div>
+    </section>
+    </div>
+
+{% endblock %} %}
