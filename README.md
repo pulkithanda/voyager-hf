@@ -1,22 +1,31 @@
-# Voyager
-Voyager website: NASA & SpaceX have successfully helped humanity establish a multi-planetary presence.
-A space website that can be used as a template in future for space related topics. 
+This is a web development project for hacktoberfest made with HTML, CSS, JS and Python (flask).<br>
+Voyager website: NASA & SpaceX have successfully helped humanity establish a multi-planetary presence.<br>
+A space website that can be used as a template in future for space related topics.  
 
+<h2 align="center">A Glimpse of the website</h2>
 
- ```
+<p align="center">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=250&height=150">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859719950490271764/unknown.png?width=250&height=150">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859720083684458496/unknown.png?width=250&height=150">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859720259303637072/unknown.png?width=250&height=150">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859720801649164318/unknown.png?width=250&height=150">
+<img src="https://media.discordapp.net/attachments/789454958453063702/859720886897868810/unknown.png?width=250&height=150">
+</p>
+
+## Contribution Guidelines🏗
+
+Are there any missing features which we can add to make it the best template available❓ or you are here just to help out with the issues (see issues) or to contribute towards hacktoberfest 2021, well welcome!
+To start contributing, follow the below guidelines:
+
+```
   D:\xyz_folder> git clone https://github.com/pulkithanda/voyager-hf.git
   D:\xyz_folder\voyager-hf>pip install -r requirements.txt
   D:\xyz_folder\voyager-hf>click on run.py
+  
+  https://github.com/pulkithanda/voyager-hf.git
+
 ```
 
-<h2>A Glimpse of the website</h2>
-<h4> Landing Page Design </h4><hr>
-<img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=1260&height=586">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859719950490271764/unknown.png?width=1271&height=586">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859719999275008000/unknown.png?width=1440&height=237">
-<h4> Preview of the forms </h4><hr>
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720083684458496/unknown.png?width=1258&height=586">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720259303637072/unknown.png?width=1291&height=586">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720801649164318/unknown.png?width=1251&height=587">
-<h4> Form Responses by the People </h4><hr>
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720886897868810/unknown.png?width=1265&height=586">
+You're done! Now you can help with the issues (issues tab and also the issues file) or maybe even add some sections (team section or missions etc) and after accepting the PR
+It'll be counted as your contribution to open source and for hacktoberfest in the month of october! <i>Thanks for coming!</i> Do star it & follow my github if you liked the project and for tons of other projects!
