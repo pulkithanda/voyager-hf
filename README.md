@@ -1,10 +1,12 @@
 # Voyager
-Intech'21 submission (WebDev) by Pulkit
+Voyager website: NASA & SpaceX have successfully helped humanity establish a multi-planetary presence.
+A space website that can be used as a template in future for space related topics. 
+
 
  ```
-  D:\xyz_folder> git clone https://github.com/Pulkitchamp/Voyager-Website.git
-  D:\xyz_folder\Voyager-Website>pip install -r requirements.txt
-  D:\xyz_folder\Voyager-Website>click on run.py
+  D:\xyz_folder> git clone https://github.com/pulkithanda/voyager-hf.git
+  D:\xyz_folder\voyager-hf>pip install -r requirements.txt
+  D:\xyz_folder\voyager-hf>click on run.py
 ```
 
 <h2>A Glimpse of the website</h2>
