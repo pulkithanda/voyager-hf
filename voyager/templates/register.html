@@ -20,7 +20,7 @@
                     {{ form.username(class="form-control form-control-lg is-invalid") }}
                     
                         {% for error in form.username.errors %}
-                            <span>{{ error }}</span>
+                            <span class='err'>{{ error }}</span>
                         {% endfor %}
 
                 {% else %}
@@ -32,7 +32,7 @@
                     {{ form.email(class="form-control form-control-lg is-invalid") }}
                    
                         {% for error in form.email.errors %}
-                            <span>{{ error }}</span>
+                            <span class='err'>{{ error }}</span>
                         {% endfor %}
                    
                 {% else %}
@@ -45,7 +45,7 @@
                     {{ form.password(class="form-control form-control-lg is-invalid") }}
                    
                         {% for error in form.password.errors %}
-                            <span>{{ error }}</span>
+                            <span class='err'>{{ error }}</span>
                         {% endfor %}
                     
                 {% else %}
@@ -58,7 +58,7 @@
                     {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
                     
                         {% for error in form.confirm_password.errors %}
-                            <span>{{ error }}</span>
+                            <span class='err'>{{ error }}</span>
                         {% endfor %}
 
                 {% else %}
