@@ -22,7 +22,6 @@
     {% else %}
         <title> Voyager </title>
     {% endif %}
-
 </head>
 <body>
   <nav>
@@ -41,7 +40,11 @@
   {% if current_user.is_authenticated %}
   <li><a href="{{url_for('apply')}}">Apply</a></li>
   <li><a  href="{{ url_for('logout') }}">Logout</a>
-    <li style="cursor:pointer;">Welcome {{ current_user.username }}</a></li>
+      <li>
+        <button>
+            <img src = "../static/pics/default.png" alt ="account" style = "width:30px; border-radius:50%">
+        </button>
+      </li>
     {% else %}
     <li><a  href="{{ url_for('login') }}">Login</a>
     <li><a  href="{{ url_for('register') }}">Register</a>
