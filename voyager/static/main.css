@@ -822,5 +822,21 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
   height: 250px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+/*
+  Mouse cursor icons, used in the video gallery section of the website.
+*/
+
+.cursor-prev {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cursor-prev.cur), auto;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cursor-prev.svg) 16 16, auto;
+}
+
+.cursor-next {
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cursor-next.cur), auto;
+  cursor: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/cursor-next.svg) 16 16, auto;
 }
 

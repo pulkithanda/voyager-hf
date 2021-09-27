@@ -72,3 +72,30 @@ function getBgPos(i){ //returns the background-position string to create paralla
   return ( 100-gsap.utils.wrap(0,360,gsap.getProperty('.ring', 'rotationY')-180-i*36)/360*500 )+'px 0px';
 }
 
+/*  
+  JavaScript source code for the "left/right" mouse effect in the video gallery section.
+  Tweaked a bit for proper integration.
+  Source : https://webdesign.tutsplus.com/tutorials/quick-tip-how-to-manipulate-cursor-appearance-with-css--cms-31825
+  Author : George Martsoukos
+*/
+
+window.addEventListener("load", init);
+
+function init() {
+  const gallery = document.getElementById("video_gallery");
+  const width = gallery.offsetWidth;
+  const halfImgWidth = width / 2;
+
+  gallery.addEventListener("mousemove", function(e) {
+    const xPos = e.pageX - gallery.offsetLeft;
+    /*IE11 need this*/
+    //this.classList.remove("cursor-prev");
+    //this.classList.remove("cursor-next");
+    this.classList.remove("cursor-prev", "cursor-next");
+    if (xPos > halfImgWidth) {
+      this.classList.add("cursor-next");
+    } else {
+      this.classList.add("cursor-prev");
+    }
+  });
+}
