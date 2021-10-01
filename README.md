@@ -45,52 +45,40 @@ It'll be counted as your contribution to open source and for hacktoberfest in th
     * Prerequisites : Heroku cli
     * First make a new app on heroku & give a name.
     * Clone the repository to your local system.
-    * Login to your heroku account.
+    * Login to your heroku account:
     
     ~~~
-    
     heroku login 
-    
     ~~~ 
     
-    * Set git remote repository to heroku 
-    
-    ~~~ 
-    
+    * Set git remote repository to heroku: 
+ 
+    ~~~    
     heroku git:remote -a <appName you created earlier>
-    
     ~~~
     
-    * Install gunicorn 
+    * Install gunicorn:
     
     ~~~ 
-    
-    pip install gunicorn 
-    
+    pip install gunicorn   
     ~~~
     
-    * Document all dependencies 
+    * Document all dependencies:
     
-    ~~~ 
-    
-    pip freeze > requirements.txt
-    
+    ~~~  
+    pip freeze > requirements.txt  
     ~~~
     
-    * Add script that execude on server in procfile 
+    * Add script that execude on server in procfile:
     
+    ~~~  
+    web: gunicorn run:app    
     ~~~
     
-    web: gunicorn run:app 
+    * Push the branch to heroku that you want to deploy:
     
-    ~~~
-    
-    * Push the branch to heroku that you want to deploy 
-    
-    ~~~ 
-    
-    git push heroku master 
-    
+    ~~~   
+    git push heroku master  
     ~~~ 
     
     
