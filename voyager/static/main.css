@@ -21,11 +21,9 @@ body {
 	box-sizing: border-box !important;
 }
 
-
-h
 .lines {
 	position: absolute;
-	top: 0;
+	top: 52%;
 	left: 0;
 	right: 0;
 	height: 100%;
@@ -236,13 +234,14 @@ input[type="checkbox"]{
   }
   
 .signing {
-    height: 88.7vh;
-    width: 100%;
-    background: url('https://cdn.dribbble.com/users/1094383/screenshots/7212146/media/efbcc18e2d2a9c706d103e801fb85ba1.png?compress=1&resize=1000x750') ;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-    font: 400 18px/22px "Rajdhani", sans-serif;
+  height: 100vh;
+  width: 100%;
+  background: url('https://cdn.dribbble.com/users/1094383/screenshots/7212146/media/efbcc18e2d2a9c706d103e801fb85ba1.png?compress=1&resize=1000x750') ;
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  font: 400 18px/22px "Rajdhani", sans-serif;
+  position: absolute;
 }
 .container {
     display: flex;
@@ -254,9 +253,14 @@ input[type="checkbox"]{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     margin: 0;
-    width: 830px;
-    height: 575px;
+    width: 80%;
     background-color: white;
+}
+.login .container {
+  height: 70%;
+}
+.signing .container {
+  height: 90%;
 }
 .container div {
     box-sizing: border-box;
@@ -265,7 +269,7 @@ input[type="checkbox"]{
     padding: 36px;
 }
 .container div.heading-block {
-    width: 348px;
+    width: 40%;
     padding: 0;
     display: flex;
     flex-direction: column;
@@ -278,7 +282,7 @@ input[type="checkbox"]{
     width: 100px;
 }
 .container div.signup-form {
-    width: 482px;
+    width: 60%;
 }
 .heading-block {
     background-color: #af81eb;
@@ -286,15 +290,44 @@ input[type="checkbox"]{
 }
 .heading-block h1 {
     margin: 0;
-    font: 700 64px/66px "Rajdhani", sans-serif;
+    font: 700 3rem/3rem "Rajdhani", sans-serif;
     text-transform: uppercase;
     letter-spacing: -2px;
 }
 
-   /* Button and hover effect */
+@media screen and (max-width: 700px) {
+  .heading-block {
+    display: none !important;
+    /* width: 100% !important; */
+  }  
+  .container div.signup-form {
+    width: 100%;
+  }
+  .signup-form input{
+    width: 100% !important;
+  }
+  .container{
+    flex-direction: row;
+  }
+  .signing .container {
+    height: 100%;
+  }
+  .signup-form .heading{
+    display: block !important;
+    color: #0f1923;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+}
+/* Button and hover effect */
 
 .signup-form p {
     margin: 0;
+}
+.signup-form .heading{
+  display: none;
 }
 .signup-form form {
     margin: 30px 0;
@@ -363,13 +396,14 @@ input[type="checkbox"]{
 }
 
 .login {
-  height: 88.7vh;
+  height: 100vh;
   width: 100%;
   background: url('https://cdn.dribbble.com/users/1094383/screenshots/7212146/media/efbcc18e2d2a9c706d103e801fb85ba1.png?compress=1&resize=1000x750') ;
   background-repeat:no-repeat;
   background-size: cover;
   background-position: center;
   font: 400 18px/22px "Rajdhani", sans-serif;
+  position: absolute;
 }
 
 .applying{
@@ -790,4 +824,168 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 
 .admin-header {
     color: rgb(241, 238, 238);
+}
+
+/*Footer CSS*/
+.bscontainer {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .bscontainer-sm, .bscontainer {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .bscontainer-md, .bscontainer-sm, .bscontainer {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .bscontainer-lg, .bscontainer-md, .bscontainer-sm, .bscontainer {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .bscontainer-xl, .bscontainer-lg, .bscontainer-md, .bscontainer-sm, .bscontainer {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .bscontainer-xxl, .bscontainer-xl, .bscontainer-lg, .bscontainer-md, .bscontainer-sm, .bscontainer {
+    max-width: 1320px;
+  }
+}
+.bsrow {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -.5);
+  margin-left: calc(var(--bs-gutter-x) * -.5);
+}
+.bsrow > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * .5);
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  margin-top: var(--bs-gutter-y);
+}
+@media (min-width: 768px) {
+    .bscol-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .bscol-md-2 {
+        flex: 0 0 auto;
+        width: 16.66666667%;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px){
+    .bscol-md-2, .bscol-md-6 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+}
+@media (min-width: 376px) and (max-width: 576px){
+    .bscol-md-2, .bscol-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+.footer-dark {
+  padding:50px 0;
+  color:#f0f9ff;
+  background-color:#383838;
+}
+
+.footer-dark h3 {
+  margin-top:0;
+  margin-bottom:12px;
+  font-weight:bold;
+  font-size:20px;
+  text-decoration: underline;
+}
+
+.footer-dark ul {
+  padding:0;
+  list-style:none;
+  line-height:1.6;
+  font-size:18px;
+  margin-bottom:0;
+}
+
+.footer-dark ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-dark ul a:hover {
+  opacity:0.8;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item:not(.social) {
+    text-align:center;
+    padding-bottom:20px;
+  }
+}
+
+.footer-dark .item.text {
+  margin-bottom:36px;
+}
+
+@media (max-width:767px) {
+  .footer-dark .item.text {
+    margin-bottom:0;
+  }
+}
+
+.footer-dark .item.text p {
+  opacity:0.6;
+  margin-bottom:0;
+}
+
+.footer-dark .item.social {
+  text-align:center;
+}
+
+@media (max-width:991px) {
+  .footer-dark .item.social {
+    text-align:center;
+    margin-top:20px;
+  }
+}
+
+.footer-dark .item.social > a {
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+
+.footer-dark .item.social > a:hover {
+  opacity:0.9;
+}
+
+.footer-dark .copyright {
+  text-align:center;
+  padding-top:24px;
+  opacity:0.3;
+  font-size:13px;
+  margin-bottom:0;
 }
