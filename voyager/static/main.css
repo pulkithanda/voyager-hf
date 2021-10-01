@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@imort url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap");
@@ -181,7 +181,7 @@ input[type="checkbox"]{
     width: 100%;
     margin-left: -100%;
     display: block;
-    font-size: 20px;
+    font-size: 20px;  
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
   #click:checked ~ ul li a{
@@ -192,7 +192,7 @@ input[type="checkbox"]{
     background: none;
     color: cyan;
   }
-}
+
 
 .landing {
   height: 89vh;
@@ -800,7 +800,6 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 
 
 
-
 body{
     display: flex;
     justify-content: center;
@@ -826,7 +825,7 @@ body{
     box-shadow:  inset -5px -5px -5px rgba(253, 243, 243, 0.5); 
     box-shadow:   5px 5px 5px rgba(197, 185, 185, 0.05);
     box-shadow:  -5px -5px -5px rgba(255, 241, 241, 0.5);
-   border-radius: 15px;
+    border-radius: 15px;
    margin: 30px;
  
 }
@@ -898,7 +897,7 @@ body{
 }
 .container .card:hover .box .content h3,
 .container .card:hover .box .content p{
-  color: #fff;
+      color: #fff;
 }
 .container .card .box .content p{
     font-size: 1em;
@@ -939,3 +938,5 @@ body{
     color: #fff;
     transform: translateY(5px);
 }
+
+
