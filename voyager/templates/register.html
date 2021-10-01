@@ -12,7 +12,8 @@
     </div>
 
     <div class="signup-form">
-        
+        <h1 class="heading">REGISTER</h1>
+        <!-- CSS Code was already added in the previous Pull Requests -->
         <form method="POST" action="">
             {{ form.hidden_tag() }}
                 {{ form.username.label(class="form-control-label") }}
@@ -21,7 +22,7 @@
                     {{ form.username(class="form-control form-control-lg is-invalid") }}
                     
                         {% for error in form.username.errors %}
-                            <span class='err'>{{ error }}</span>
+                            <span>{{ error }}</span>
                         {% endfor %}
 
                 {% else %}
@@ -33,7 +34,7 @@
                     {{ form.email(class="form-control form-control-lg is-invalid") }}
                    
                         {% for error in form.email.errors %}
-                            <span class='err'>{{ error }}</span>
+                            <span>{{ error }}</span>
                         {% endfor %}
                    
                 {% else %}
@@ -46,7 +47,7 @@
                     {{ form.password(class="form-control form-control-lg is-invalid") }}
                    
                         {% for error in form.password.errors %}
-                            <span class='err'>{{ error }}</span>
+                            <span>{{ error }}</span>
                         {% endfor %}
                     
                 {% else %}
@@ -59,7 +60,7 @@
                     {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
                     
                         {% for error in form.confirm_password.errors %}
-                            <span class='err'>{{ error }}</span>
+                            <span>{{ error }}</span>
                         {% endfor %}
 
                 {% else %}
