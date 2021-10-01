@@ -1,0 +1,157 @@
+
+@import url(https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222222;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px rgba(163, 163, 163, 0.05);
+    box-shadow:  inset -5px -5px -5px rgba(253, 243, 243, 0.5); 
+    box-shadow:   5px 5px 5px rgba(197, 185, 185, 0.05);
+    box-shadow:  -5px -5px -5px rgba(255, 241, 241, 0.5);
+ border-radius: 15px;
+ margin: 30px;
+ 
+}
+.container .card .box{
+position: absolute;
+top: 20px;
+left: 20px;
+right: 20px;
+bottom: 20px;
+background: #c7c9cc;
+box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+border-radius: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.container .card:hover .box{
+transform: translateY(-50px);
+box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+background: linear-gradient(45deg,#b95ce4,#4f29cc);
+transition: 0.5s;
+}
+.container .card .box .content{
+    padding: 20px;
+    text-align: center;
+}
+.container .card .box .content #avatar{
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    border-radius: 50%;
+    left: 20px;
+    background-image: url('https://images.unsplash.com/photo-1464863979621-258859e62245?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1533&q=80') ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.container .card .box .content #avatar1{
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    border-radius: 50%;
+    left: 20px;
+    background-image: url('https://images.unsplash.com/photo-1632128119416-84aa77e04b2d?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80') ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.container .card .box .content #avatar2{
+    width: 100px;
+    height: 100px;
+    top: -30px;
+    border-radius: 50%;
+    left: 20px;
+    background-image: url('https://source.unsplash.com/random') ;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+}
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color: rgb(12, 11, 11);
+    z-index: 1;
+    transition: 0.5s;
+    top: 10px;
+}
+.container .card:hover .box .content h3,
+.container .card:hover .box .content p{
+  color: #fff;
+}
+.container .card .box .content p{
+    font-size: 1em;
+    font-weight: 300;
+    color: rgb(97, 95, 95);
+    z-index: 1;
+    transition: 0.5s;
+    
+}
+
+.container .card .box .content .social-media{
+    font-size: 30px;
+    height: 10px;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+    transition: all .3s;
+    margin-left: 105px;
+}
+.container .card .box .content .social-media a{
+    text-decoration: none;
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0px 8px;
+    transition: all .3s;
+    opacity: 0.80;
+    margin-left: -103px;
+}
+
+.container .card:hover .box .content .social-media{
+    color: #fff;
+    transform: translateY(5px);
+}
+@media screen and (max-width:1170px)
+{
+    .container .card .box{
+        margin: 20px;
+        padding: 34px;
+        margin: 10px 10px;
+        margin-bottom: 20px;
+    }
+}
