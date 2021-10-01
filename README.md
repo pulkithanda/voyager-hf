@@ -29,3 +29,14 @@ To start contributing, follow the below guidelines:
 
 You're done! Now you can help with the issues (issues tab and also the issues file) or maybe even add some sections (team section or missions etc) and after accepting the PR
 It'll be counted as your contribution to open source and for hacktoberfest in the month of october! <i>Thanks for coming!</i> Do star it & follow my github if you liked the project and for tons of other projects!
+
+
+## Deployment methods:
+
+ 1. ***Deploy Forked repository (Heruko)***
+    * First fork the repository.
+    * Login to your heruko account.
+    * Create new app & give a name.
+    * Connect your GitHub account to heruko.
+    * Search the repo you want to deploy and then deploy.
+
