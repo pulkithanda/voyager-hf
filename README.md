@@ -3,7 +3,7 @@ Voyager website: NASA & SpaceX have successfully helped humanity establish a mul
 A space website that can be used as a template in future for space related topics.  
 
 <h2 align="center">A Glimpse of the website</h2>
-<a align="center" href="https://voyager-space.herokuapp.com/" >Demo</a>
+<h4 align="center" ><a href="https://voyager-space.herokuapp.com/" >Demo</a></h4>
 
 <p align="center">
 <img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=250&height=150">
@@ -48,37 +48,49 @@ It'll be counted as your contribution to open source and for hacktoberfest in th
     * Login to your heroku account.
     
     ~~~
+    
     heroku login 
+    
     ~~~ 
     
     * Set git remote repository to heroku 
     
     ~~~ 
+    
     heroku git:remote -a <appName you created earlier>
+    
     ~~~
     
     * Install gunicorn 
     
     ~~~ 
+    
     pip install gunicorn 
+    
     ~~~
     
     * Document all dependencies 
     
     ~~~ 
+    
     pip freeze > requirements.txt
+    
     ~~~
     
     * Add script that execude on server in procfile 
     
     ~~~
+    
     web: gunicorn run:app 
+    
     ~~~
     
     * Push the branch to heroku that you want to deploy 
     
     ~~~ 
+    
     git push heroku master 
+    
     ~~~ 
     
     
