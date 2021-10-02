@@ -3,6 +3,7 @@ Voyager website: NASA & SpaceX have successfully helped humanity establish a mul
 A space website that can be used as a template in future for space related topics.  
 
 <h2 align="center">A Glimpse of the website</h2>
+<h4 align="center" ><a href="https://voyager-space.herokuapp.com/" >Demo</a></h4>
 
 <p align="center">
 <img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=250&height=150">
@@ -33,10 +34,58 @@ It'll be counted as your contribution to open source and for hacktoberfest in th
 
 ## Deployment methods:
 
- 1. ***Deploy Forked repository (Heruko)***
+ 1. ***Deploy Forked repository (Heroku)***
     * First fork the repository.
-    * Login to your heruko account.
+    * Login to your heroku account.
     * Create new app & give a name.
-    * Connect your GitHub account to heruko.
+    * Connect your GitHub account to heroku.
     * Search the repo you want to deploy and then deploy.
+    
+ 2. ***Deploy local repository (Heroku)***
+    * Prerequisites : Heroku cli
+    * First make a new app on heroku & give a name.
+    * Clone the repository to your local system.
+    * Login to your heroku account:
+    
+    ~~~
+    heroku login 
+    ~~~ 
+    
+    * Set git remote repository to heroku: 
+ 
+    ~~~    
+    heroku git:remote -a <appName you created earlier>
+    ~~~
+    
+    * Install gunicorn:
+    
+    ~~~ 
+    pip install gunicorn   
+    ~~~
+    
+    * Document all dependencies:
+    
+    ~~~  
+    pip freeze > requirements.txt  
+    ~~~
+    
+    * Add script that execude on server in procfile:
+    
+    ~~~  
+    web: gunicorn run:app    
+    ~~~
+    
+    * Push the branch to heroku that you want to deploy:
+    
+    ~~~   
+    git push heroku master  
+    ~~~ 
+    
+    
+    
+
+
+
+
+
 
