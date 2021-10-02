@@ -3,7 +3,7 @@ Voyager website: NASA & SpaceX have successfully helped humanity establish a mul
 A space website that can be used as a template in future for space related topics.  
 
 <h2 align="center">A Glimpse of the website</h2>
-<h4 align="center" ><a href="voyager-website.herokuapp.com/"> You can view it here </a></h4>
+<h4 align="center" ><a href="https://voyager-website.herokuapp.com/"> You can view it here </a></h4>
 
 <p align="center">
 <img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=250&height=150">
