@@ -280,6 +280,10 @@ input[type="checkbox"] {
   height: 70%;
 }
 
+.admining .container {
+  height: 70%;
+}
+
 .signing .container {
   height: 90%;
 }
@@ -459,13 +463,14 @@ input[type="checkbox"] {
 }
 
 .admining {
-  height: 88.7vh;
+  height: 100vh;
   width: 100%;
   background: url("https://cdn.dribbble.com/users/1094383/screenshots/7212146/media/efbcc18e2d2a9c706d103e801fb85ba1.png?compress=1&resize=1000x750");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
   font: 400 18px/22px "Rajdhani", sans-serif;
+  position: absolute;
 }
 
 .main-class {
