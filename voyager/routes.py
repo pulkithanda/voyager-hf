@@ -13,7 +13,7 @@ def home():
 
 @app.route("/procedure")
 def procedure():
-    return render_template('procedure.html', title='Procedure')
+    return render_template('procedure.html', title='Missions')
 
 
 @app.route("/register", methods=['GET', 'POST'])
