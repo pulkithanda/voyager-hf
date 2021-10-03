@@ -15,7 +15,7 @@ def home():
 def missions():
     return render_template('missions.html', title='Missions')
 
-@app.route("/missions space")
+@app.route("/missionsspace")
 def mspace():
     return render_template('missions space.html', title='Missions Space')
 
