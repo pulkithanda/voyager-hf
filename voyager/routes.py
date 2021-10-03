@@ -11,9 +11,9 @@ from flask_login import login_user, current_user, logout_user, login_required
 def home():
     return render_template('home.html', title = 'Home')
 
-@app.route("/procedure")
-def procedure():
-    return render_template('procedure.html', title='Missions')
+@app.route("/missions")
+def missions():
+    return render_template('missions.html', title='Missions')
 
 
 @app.route("/register", methods=['GET', 'POST'])
