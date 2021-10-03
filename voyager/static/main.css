@@ -276,6 +276,10 @@ input[type="checkbox"] {
   height: 70%;
 }
 
+.applying .container {
+  height: 70%;
+}
+
 .signing .container {
   height: 90%;
 }
