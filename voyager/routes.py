@@ -15,6 +15,9 @@ def home():
 def missions():
     return render_template('missions.html', title='Missions')
 
+@app.route("/missions space")
+def missions():
+    return render_template('missions space.html', title='Missions Space')
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
