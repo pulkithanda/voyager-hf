@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
      <!-- Required meta tags -->
      <meta charset="utf-8">
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -9,11 +8,52 @@
      <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
      <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
      <!-- Bootstrap CSS for errors only asked permission from anshul-->
-    
      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+     <link rel="stylesheet" href="fontawesome-free-5.15.1/css/all.css">
+     <script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
      <link rel="shortcut icon" type="image/png" href="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png"/>
+
+      <style>
+      .box{
+        position: absolute;
+        top: 3.5%;
+        left: 72%;
+        transform: translate(-50%,-50%);
+      }
+      .input {
+        padding: 10px;
+        width: 80px;
+        height: 55px;
+        background: none;
+        border: 4px solid #ffffff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        font-family: Comic Sans MS;
+        font-size: 20px;
+        color: #ffffff;
+        outline: none;
+        transition: .5s;
+      }
+      .box:hover input{
+        width: 245px;
+        background: #000000;
+        border-radius: 10px;
+      }
+      i{
+        position: absolute;
+        top: 50%;
+        right: 15px;
+        transform: translate(-50%,-50%);
+        font-size: 20px;
+        color: #ffffff;
+        transition: .2s;
+      }
+      .box:hover i{
+        opacity: 0;
+        z-index: -1;
+      }
+      </style>
 
      {% if title %}
          <title> Voyager - {{ title }} </title>
@@ -32,6 +72,15 @@
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;">
+
+  <!-- Search -->
+  <div class="box">
+    <form name="search">
+        <input type="text" class="input" name="txt"  onmouseout="document.search.txt.value = ''">
+    </form>
+        <i class="fas fa-search"></i>
+  </div>
+
 
   <li><a href="{{ url_for('home') }}">Home</a></li>
   <li><a href="{{ url_for('procedure') }}">Procedure</a></li>
