@@ -35,7 +35,6 @@
 
   <li><a href="{{ url_for('home') }}">Home</a></li>
   <li><a href="{{ url_for('missions') }}">Missions</a></li>
-  <li><a href="{{ url_for('missions') }}">Missions Space</a></li>
   {% if current_user.is_authenticated %}
   <li><a href="{{url_for('apply')}}">Apply</a></li>
   <li><a  href="{{ url_for('logout') }}">Logout</a>
