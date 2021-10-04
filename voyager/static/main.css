@@ -808,8 +808,8 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 
 .stage {
   overflow:hidden;
-  background:#383838;
-  
+  /* background:#383838; */
+
 }
 
 .ring_img {
