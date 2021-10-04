@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    
+  <div class="login">
+
+    <div class="container">
+
+      <div class="heading-block">
+        <h1 style="  text-align: center; margin-top: 2rem;">Need Help?<br><br><span style="color: #0f1923;">Contact Us</span></h1>
+      <div>
+            
+    </div>
+
+    <div class="voyager-logo">
+        <img src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" alt="">
+    </div>
+
+  </div>
+
+  <div class="signup-form">
+        <h1 class="heading">REGISTER</h1>
+        <form method="POST" action="" name="google-sheet">
+           
+                <label class="form-control-label" for="username">Name</label>
+                  <input class="form-control form-control-lg" id="Name" name="Name" required="" type="text" placeholder="Your Name">
+                
+                <label class="form-control-label" for="email">Email</label>
+                  <input class="form-control form-control-lg" id="Email" name="email" required="" type="text" placeholder="Your E-mail ">
+                
+                <label class="form-control-label" for="message">Message..</label>
+                  <textarea id="subject" name="Message" placeholder="Your Message.." style="max-width:90% overflow-x:scroll"></textarea>
+                  <br><br>
+
+                <input class="submit-class" id="submit" name="submit" type="submit" value="Send">
+          </form>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbx9nZdBPpuWnyHBAcRaFvP3OUvJ2rkU1VbN2k91qRbaYfXYglp_-vvDtYmo5A9UxDXtIQ/exec'
+    const form = document.forms['google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+{% endblock content %}
