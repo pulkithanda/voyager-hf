@@ -7,10 +7,11 @@ from voyager.models import User
 
 class RegistrationForm(FlaskForm):
     username = StringField('Username',
-                           validators=[DataRequired(), Length(min=2, max=20), Regexp("/^\S+$/")])
+                           validators=[DataRequired(), Length(min=2, max=20), Regexp('^\w+$', message="Username must contain only letters numbers or underscore")])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired(), Regexp("/^\S+$/")], Length(min=6, max=64))
+    password = PasswordField('Password', validators=[
+                             DataRequired(), Regexp('^\S+$', message="Password must contain only letters numbers or special characters"), Length(min=6, max=64)])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Join Voyager')
