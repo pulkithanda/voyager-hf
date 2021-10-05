@@ -2,49 +2,49 @@
 {% block content %}
 <div class="login">
     <div class="container">
-    <div class="heading-block">
-        <div>
-            <h1>Welcome to the Voyager. <span style="color: #0f1923;">Log In</span></h1>
+        <div class="heading-block">
+            <div>
+                <h1>Welcome to the Voyager.<br><br><span style="color: #0f1923; font-size: 4rem;">Log In</span></h1>
+            </div>
+            <div class="voyager-logo">
+                <img src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" alt="">
+            </div>
         </div>
-        <div class="voyager-logo">
-            <img src="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" alt="">
-        </div>
+
+        <div class="signup-form">
+            <h1 class="heading">LOG IN</h1>
+            <form method="POST" action="">
+                {{ form.hidden_tag() }}
+                {{ form.email.label(class="form-control-label") }}
+
+                {% if form.email.errors %}
+                        {{ form.email(class="form-control ") }}
+                        
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                    
+                    {% else %}
+                        {{ form.email(class="form-control ") }}
+                    {% endif %}
+
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+
+                    {{ form.password(class="form-control ") }}
+                        
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                    
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+
+                    {{ form.submit(class="btn btn-outline-info") }}
+            </form>
+        </div> 
     </div>
-
-    <div class="signup-form">
-        <form method="POST" action="">
-            {{ form.hidden_tag() }}
-            {{ form.email.label(class="form-control-label") }}
-
-            {% if form.email.errors %}
-                    {{ form.email(class="form-control ") }}
-                    
-                        {% for error in form.email.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                   
-                {% else %}
-                    {{ form.email(class="form-control ") }}
-                {% endif %}
-
-                {{ form.password.label(class="form-control-label") }}
-                {% if form.password.errors %}
-
-                {{ form.password(class="form-control ") }}
-                    
-                        {% for error in form.password.errors %}
-                            <span>{{ error }}</span>
-                        {% endfor %}
-                   
-                {% else %}
-                    {{ form.password(class="form-control form-control-lg") }}
-                {% endif %}
-
-                {{ form.submit(class="btn btn-outline-info") }}
-
-    </form>
-</div> 
-</div>
 </div>   
 
 {% endblock content %}
