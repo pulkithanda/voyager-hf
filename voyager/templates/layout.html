@@ -35,6 +35,7 @@
 
   <li><a href="{{ url_for('home') }}">Home</a></li>
   <li><a href="{{ url_for('procedure') }}">Procedure</a></li>
+  <li><a href="{{ url_for('contact') }}">Contact Us</a></li> 
   {% if current_user.is_authenticated %}
   <li><a href="{{url_for('apply')}}">Apply</a></li>
   <li><a  href="{{ url_for('logout') }}">Logout</a>
