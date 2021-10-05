@@ -10,7 +10,8 @@ class RegistrationForm(FlaskForm):
                            validators=[DataRequired(), Length(min=2, max=20), Regexp("/^\S+$/")])
     email = StringField('Email',
                         validators=[DataRequired(), Email()])
-    password = PasswordField('Password', validators=[DataRequired(), Regexp("/^\S+$/")], Length(min=6, max=64))
+    password = PasswordField('Password', validators=[
+                             DataRequired(), Regexp("/^\S+$/"), Length(min=6, max=64)])
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Join Voyager')

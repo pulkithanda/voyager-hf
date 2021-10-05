@@ -79,13 +79,4 @@ It'll be counted as your contribution to open source and for hacktoberfest in th
     
     ~~~   
     git push heroku master  
-    ~~~ 
-    
-    
-    
-
-
-
-
-
-
+    ~~~
