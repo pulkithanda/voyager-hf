@@ -16,11 +16,19 @@
   <link rel="shortcut icon" type="image/png"
     href="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" />
 
+  {% block header %}{% endblock %}
+
   {% if title %}
-  <title>Voyager - {{ title }}</title>
+  <title> Voyager - {{ title }} </title>
   {% else %}
-  <title>Voyager</title>
+  <title> Voyager </title>
   {% endif %}
+  <style>
+    .add_hover:hover {
+      color: blue;
+      font-weight: bold
+    }
+  </style>
 </head>
 
 <body>
@@ -38,14 +46,16 @@
       <li>
         <form name="search">
           <i class="fa fa-search"></i>
-          <input type="text" class="input" name="search-txt" style="color: #000; padding-left:0.5vw; border-radius:0.2vw">
+          <input type="text" class="input" name="search-txt"
+            style="color: #000; padding-left:0.5vw; border-radius:0.2vw">
         </form>
       </li>
       <li><a href="{{ url_for('home') }}">Home</a></li>
       <li><a href="{{ url_for('procedure') }}">Procedure</a></li>
+      <li><a href="{{ url_for('contact') }}">Contact Us</a></li>
       {% if current_user.is_authenticated %}
       <li><a href="{{url_for('apply')}}">Apply</a></li>
-      <li><a href="{{ url_for('logout') }}">Logout</a></li>
+      <li><a href="{{ url_for('logout') }}">Logout</a>
       <li>
         <button>
           <img src="../static/pics/default.png" alt="account" style="width: 30px; border-radius: 50%" />
