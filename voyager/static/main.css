@@ -159,7 +159,7 @@ input[type="checkbox"] {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1170px) {
   nav .menu-btn i {
     display: block;
   }
