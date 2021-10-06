@@ -14,7 +14,9 @@ def home():
 @app.route("/procedure")
 def procedure():
     return render_template('procedure.html', title='Procedure')
-
+@app.route("/contact")
+def contact():
+    return render_template('contact.html', title='Contact Us')
 
 @app.route("/register", methods=['GET', 'POST'])
 def register():
