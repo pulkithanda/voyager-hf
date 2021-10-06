@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-     <!-- Required meta tags -->
-     <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-     <link href="https://fonts.googleapis.com/css?family=Teko:700&display=swap" rel="stylesheet">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.6.2/tailwind.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS for errors only asked permission from anshul-->
 
-     <!-- Bootstrap CSS for errors only asked permission from anshul-->
-    
-     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-     <link rel="shortcut icon" type="image/png" href="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}" />
+  <link rel="shortcut icon" type="image/png"
+    href="https://logodownload.org/wp-content/uploads/2020/06/valorant-logo-1.png" />
 
-     {% if title %}
-         <title> Voyager - {{ title }} </title>
-    {% else %}
-        <title> Voyager </title>
-    {% endif %}
+  {% if title %}
+  <title>Voyager - {{ title }}</title>
+  {% else %}
+  <title>Voyager</title>
+  {% endif %}
 </head>
+
 <body>
   <nav>
-  <div class="logo"> Voyager </div>
-  <input type="checkbox" id="click">
-        <label for="click" class="menu-btn">
-        <i class="large material-icons">dehaze</i>
-        </label>
-  <ul style="color: #f2f2f2;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;">
-
-  <li><a href="{{ url_for('home') }}">Home</a></li>
-  <li><a href="{{ url_for('procedure') }}">Procedure</a></li>
-  {% if current_user.is_authenticated %}
-  <li><a href="{{url_for('apply')}}">Apply</a></li>
-  <li><a  href="{{ url_for('logout') }}">Logout</a>
+    <div class="logo">Voyager</div>
+    <input type="checkbox" id="click" />
+    <label for="click" class="menu-btn">
+      <i class="large material-icons">dehaze</i>
+    </label>
+    <ul style="
+          color: #f2f2f2;
+          font-size: 18px;
+          font-weight: 500;
+          letter-spacing: 1px; ">
+      <li>
+        <form name="search">
+          <i class="fa fa-search"></i>
+          <input type="text" class="input" name="search-txt" style="color: #000; padding-left:0.5vw; border-radius:0.2vw">
+        </form>
+      </li>
+      <li><a href="{{ url_for('home') }}">Home</a></li>
+      <li><a href="{{ url_for('procedure') }}">Procedure</a></li>
+      {% if current_user.is_authenticated %}
+      <li><a href="{{url_for('apply')}}">Apply</a></li>
+      <li><a href="{{ url_for('logout') }}">Logout</a></li>
       <li>
         <button>
-            <img src = "../static/pics/default.png" alt ="account" style = "width:30px; border-radius:50%">
+          <img src="../static/pics/default.png" alt="account" style="width: 30px; border-radius: 50%" />
         </button>
       </li>
-    {% else %}
-    <li><a  href="{{ url_for('login') }}">Login</a>
-    <li><a  href="{{ url_for('register') }}">Register</a>
-    {% endif %}
-  </ul>
+      {% else %}
+      <li><a href="{{ url_for('login') }}">Login</a></li>
+      <li>
+        <a href="{{ url_for('register') }}">Register</a>
+        {% endif %}
+      </li>
+    </ul>
   </nav>
-      {% block content %}{% endblock %}
-  </body>
+  {% block content %}{% endblock %}
+</body>
+
 </html>
