@@ -1115,3 +1115,102 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
     font-size: 5rem;
   }
 }
+
+
+/* Our Team CSS (Starts Here) */
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap');
+</style>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    font-family: 'Epilogue', sans-serif;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.wrapper{
+    margin-top: 10%;
+}
+
+.wrapper h1{
+    font-family: 'Epilogue', sans-serif;
+    color: #fff;
+    font-size: 70px;
+    
+    text-align: center;
+}
+
+.team{
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+.team .team_member{
+    border-radius: 25px;
+    background: #fff ;
+    margin: 5px;
+    margin-bottom: 20px;
+    width: 400px;
+    padding: 20px;
+    line-height: 20px;
+    color: rgb(75, 75, 75);
+    position: relative;
+
+}
+.team .team_member h3{
+    color: black;
+    font-size: 26px;
+    margin-top: 100px;
+}
+
+.team .team_member p.role{
+    color: darkslategrey;
+    font-size: 12;
+    text-transform: uppercase;
+    margin: 12px;
+}
+
+.team .team_member .team_image{
+    width: 200px;
+    height:200px;
+    border-radius: 50%;
+    position: absolute;
+    top: -125px;
+    left: 30%;
+    transform: rotateX(-50%);
+    background: #fff;
+}
+
+.team .team_member .team_image img{
+    width: 200px;
+    height: 200px;
+
+}
+
+/* Our Team CSS (Ends Here) */
