@@ -30,7 +30,14 @@
     }
   </style>
 </head>
+<script>
+  function Search(e){
+  e.preventDefault();
+  window.find(document.getElementById("search-txt").value)
+  return false;
+  }
 
+</script>
 <body>
   <nav>
     <div class="logo">Voyager</div>
@@ -44,9 +51,11 @@
           font-weight: 500;
           letter-spacing: 1px; ">
       <li>
-        <form name="search">
+        <form name="search"
+        onsubmit="Search(event);">
+          
           <i class="fa fa-search"></i>
-          <input type="text" class="input" name="search-txt"
+          <input type="text" class="input" name="search-txt" id='search-txt'
             style="color: #000; padding-left:0.5vw; border-radius:0.2vw">
         </form>
       </li>
@@ -71,5 +80,6 @@
   </nav>
   {% block content %}{% endblock %}
 </body>
+<script src="/static/main.js"></script>
 
 </html>
