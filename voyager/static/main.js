@@ -41,7 +41,6 @@ $(document).ready(function(){gsap.timeline()
 $(window).on('mousedown touchstart', dragStart);
 $(window).on('mouseup touchend', dragEnd);
       
-
 function dragStart(e){ 
   if (e.touches) e.clientX = e.touches[0].clientX;
   xPos = Math.round(e.clientX);
