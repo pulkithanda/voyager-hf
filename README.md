@@ -19,6 +19,8 @@ A space website that can be used as a template in future for space related topic
 Are there any missing features which we can add to make it the best template available❓ or you are here just to help out with the issues (see issues) or to contribute towards hacktoberfest 2021, well welcome!
 To start contributing, follow the below guidelines:
 
+- We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+
 ```
   D:\xyz_folder> git clone https://github.com/pulkithanda/voyager-hf.git
   D:\xyz_folder\voyager-hf>pip install -r requirements.txt
