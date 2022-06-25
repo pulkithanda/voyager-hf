@@ -114,6 +114,8 @@ nav .logo {
   font-size: 45px;
   font-weight: 600;
   font-family: "Teko", sans-serif;
+  text-transform: uppercase;
+  padding-top: 8px;
 }
 
 nav ul {
@@ -162,9 +164,20 @@ input[type="checkbox"] {
 @media (max-width: 1170px) {
   nav .menu-btn i {
     display: block;
+    position: relative;
+  }
+  #click:checked~.menu-btn i {
+    visibility: hidden;
   }
   #click:checked~.menu-btn i:before {
     content: "\f00d";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    visibility: visible;
+
   }
   nav ul {
     position: fixed;
@@ -889,7 +902,7 @@ button.fancy:hover .bottom-key-1, button.fancy:hover .bottom-key-2 {
 .admin-header {
     color: rgb(241, 238, 238);
 }
-  
+
 
 /* Video gallery */
 
