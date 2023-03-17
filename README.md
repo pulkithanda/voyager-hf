@@ -1,84 +1,45 @@
-This is a web development project for hacktoberfest made with HTML, CSS, JS and Python (flask).<br>
-Voyager website: NASA & SpaceX have successfully helped humanity establish a multi-planetary presence.<br>
-A space website that can be used as a template in future for space related topics.  
+# Voyager Website
 
-<h2 align="center">A Glimpse of the website</h2>
-<h4 align="center" ><a href="https://voyager-website.herokuapp.com/"> You can view it here </a></h4>
+This is a web development project for hacktoberfest made with HTML, CSS, JS, and Python (Flask).
 
-<p align="center">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859719891333808128/unknown.png?width=250&height=150">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859719950490271764/unknown.png?width=250&height=150">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720083684458496/unknown.png?width=250&height=150">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720259303637072/unknown.png?width=250&height=150">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720801649164318/unknown.png?width=250&height=150">
-<img src="https://media.discordapp.net/attachments/789454958453063702/859720886897868810/unknown.png?width=250&height=150">
-</p>
+## Overview
 
-## Contribution Guidelines🏗
+Voyager is a space-themed website that can be used as a template for space-related topics. You can view a live demo of the website [here](https://voyager-website.herokuapp.com/).
 
-Are there any missing features which we can add to make it the best template available❓ or you are here just to help out with the issues (see issues) or to contribute towards hacktoberfest 2021, well welcome!
-To start contributing, follow the below guidelines:
+## Contribution Guidelines
 
-- We recommend working within a virtual environment whenever using Python for projects. This keeps your dependencies for each project separate and organaized. Instructions for setting up a virual enviornment for your platform can be found in the [python docs](https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/)
+We welcome contributions of all kinds, including:
 
-```
-  D:\xyz_folder> git clone https://github.com/pulkithanda/voyager-hf.git
-  D:\xyz_folder\voyager-hf>pip install -r requirements.txt
-  D:\xyz_folder\voyager-hf>click on run.py
-  
-  https://github.com/pulkithanda/voyager-hf.git
+- Adding new features
+- Fixing bugs
+- Improving documentation
+- Reviewing pull requests
 
-```
+To get started, follow these steps:
 
-You're done! Now you can help with the issues (issues tab and also the issues file) or maybe even add some sections (team section or missions etc) and after accepting the PR
-It'll be counted as your contribution to open source and for hacktoberfest in the month of october! <i>Thanks for coming!</i> Do star it & follow my github if you liked the project and for tons of other projects!
+1. Fork the repository and clone it to your local machine.
+2. Set up a virtual environment for your Python dependencies.
+3. Install the dependencies by running `pip install -r requirements.txt`.
+4. Run the website by clicking on `run.py`.
+5. Make your changes and submit a pull request.
 
+## Deployment Methods
 
-## Deployment methods:
+There are two ways to deploy the Voyager website:
 
- 1. ***Deploy Forked repository (Heroku)***
-    * First fork the repository.
-    * Login to your heroku account.
-    * Create new app & give a name.
-    * Connect your GitHub account to heroku.
-    * Search the repo you want to deploy and then deploy.
-    
- 2. ***Deploy local repository (Heroku)***
-    * Prerequisites : Heroku cli
-    * First make a new app on heroku & give a name.
-    * Clone the repository to your local system.
-    * Login to your heroku account:
-    
-    ~~~
-    heroku login 
-    ~~~ 
-    
-    * Set git remote repository to heroku: 
- 
-    ~~~    
-    heroku git:remote -a <appName you created earlier>
-    ~~~
-    
-    * Install gunicorn:
-    
-    ~~~ 
-    pip install gunicorn   
-    ~~~
-    
-    * Document all dependencies:
-    
-    ~~~  
-    pip freeze > requirements.txt  
-    ~~~
-    
-    * Add script that execude on server in procfile:
-    
-    ~~~  
-    web: gunicorn run:app    
-    ~~~
-    
-    * Push the branch to heroku that you want to deploy:
-    
-    ~~~   
-    git push heroku master  
-    ~~~
+1. Deploy the forked repository to Heroku by following these steps:
+   1. Fork the repository.
+   2. Log in to your Heroku account.
+   3. Create a new app and give it a name.
+   4. Connect your GitHub account to Heroku.
+   5. Search for the repository you want to deploy and then deploy it.
+2. Deploy the local repository to Heroku by following these steps:
+   1. Install the Heroku CLI.
+   2. Create a new app on Heroku and give it a name.
+   3. Clone the repository to your local machine.
+   4. Log in to your Heroku account by running `heroku login`.
+   5. Set the remote repository to Heroku by running `heroku git:remote -a <app-name>`.
+   6. Install Gunicorn by running `pip install gunicorn`.
+   7. Document all dependencies by running `pip freeze > requirements.txt`.
+   8. Add a `Procfile` that specifies the command to run on the server.
+   9. Push the branch to Heroku that you want to deploy by running `git push heroku master`.
