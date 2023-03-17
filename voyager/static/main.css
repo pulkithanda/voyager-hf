@@ -10,7 +10,34 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+*{
+  margin:0;
+  padding:0;
+}
+.loader{
+ position:fixed;
+ top:0;
+ left:0; 
+ background:lightgray;
+ height:100%;
+ width:100%; 
+ display:flex;
+ justify-content:center;
+ align-items: center;
+}
+.loader img{
+  height:100%;
+  width:100%;
+}
+.disppear{
+  animation:vanish 5s forwards;
+}
+  @keyframes vanish {
+    100%{
+     opacity:0;
+     visibility:hidden;
+    }
+  }
 body {
   font-family: "Poppins", sans-serif;
 }

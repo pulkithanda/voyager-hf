@@ -10,7 +10,13 @@ if(window.innerWidth < 999){
   Source : https://codemyui.com/bay-window-style-image-slider-with-scroll-effect/
   Author : Tom Miller
 */
+let loader=document.querySelector('.loader');
 
+window.addEventListener("load",vanish);
+
+function vanish(){
+  loader.classList.add("disppear")
+}
 $(document).ready(function(){gsap.timeline()
   .set('.ring', { rotationY:180, cursor:'grab' }) //set initial rotationY so the parallax jump happens off screen
   .set('.ring_img',  { // apply transform rotations to each image
