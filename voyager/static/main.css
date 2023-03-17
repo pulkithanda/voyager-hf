@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500&display=swap");
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
-  
+   
 
 *{
   margin:0;
@@ -49,6 +49,7 @@ color: var(--font-color);
 max-width: 90%;
 margin: 0 auto;
 font-size: calc(1rem + 0.25vh);
+
 }
 
 h1 {
@@ -163,6 +164,8 @@ border-radius: 50%;
 body {
   font-family: "Poppins", sans-serif;
 }
+
+
 
 * {
   margin: 0;
@@ -475,6 +478,8 @@ input[type="checkbox"] {
   text-transform: uppercase;
   letter-spacing: -2px;
 }
+
+
 
 @media screen and (max-width: 700px) {
   .heading-block {
