@@ -100,9 +100,9 @@ body {
 
 nav {
   display: flex;
-  height: 80px;
+  height: 140px;
   width: 100%;
-  background: #1b1b1b;
+  background: #777b85;
   align-items: center;
   justify-content: space-between;
   padding: 0 50px 0 100px;
@@ -114,6 +114,7 @@ nav .logo {
   font-size: 45px;
   font-weight: 600;
   font-family: "Teko", sans-serif;
+  
 }
 
 nav ul {
@@ -204,7 +205,7 @@ input[type="checkbox"] {
 .landing {
   height: 89vh;
   width: 100%;
-  background: url("https://cdn.dribbble.com/users/1094383/screenshots/7212146/media/efbcc18e2d2a9c706d103e801fb85ba1.png?compress=1&resize=1000x750");
+  background: url("https://media.istockphoto.com/id/1297349747/photo/hot-air-balloons-flying-over-the-botan-canyon-in-turkey.jpg?b=1&s=170667a&w=0&k=20&c=1oQ2rt0FfJFhOcOgJ8hoaXA5gY4225BA4RdOP1RRBz4=");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
