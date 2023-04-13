@@ -10,6 +10,36 @@ if(window.innerWidth < 999){
   Source : https://codemyui.com/bay-window-style-image-slider-with-scroll-effect/
   Author : Tom Miller
 */
+let loader=document.querySelector('.loader');
+
+window.addEventListener("load",vanish);
+const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme) {
+    document.documentElement.setAttribute('data-theme', currentTheme);
+  
+    if (currentTheme === 'dark') {
+        toggleSwitch.checked = true;
+    }
+}
+
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        localStorage.setItem('theme', 'dark');
+    }
+    else {        document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+    }    
+}
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+function vanish(){
+  loader.classList.add("disppear")
+}
+
+
 
 $(document).ready(function(){gsap.timeline()
   .set('.ring', { rotationY:180, cursor:'grab' }) //set initial rotationY so the parallax jump happens off screen
